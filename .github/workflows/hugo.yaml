@@ -71,7 +71,7 @@ jobs:
         run: git config core.quotepath false
       - name: Build with Hugo
         run: |
-          cd blog && hugo \
+          cd . && hugo \
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/" \
@@ -86,7 +86,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./blog/public
+          path: ./public
 
   # Deployment job
   deploy:
