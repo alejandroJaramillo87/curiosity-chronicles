@@ -1,0 +1,24 @@
+# macOS
+**/.DS_Store
+
+# Hugo build artifacts
+public/
+resources/
+.hugo_build.lock
+
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Python cache (if applicable)
+**/__pycache__/**/
+
+# Claude artifacts
+**/claude**
